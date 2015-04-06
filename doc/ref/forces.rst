@@ -4,7 +4,7 @@
 ===========================
 
 .. module:: trep.forces
-   :platform: Linux, Mac
+   :platform: Linux, Mac, Windows
    :synopsis: Built in non-conservative force types.
 
 
@@ -21,6 +21,7 @@ These are the types of forces currently built in to :mod:`trep`.
 
 .. toctree::
    damping
+   lineardamper
    configforce
    bodywrench
    hybridwrench
