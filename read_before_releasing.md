@@ -3,3 +3,4 @@
  * update `verison` in `ros/package.xml`
  * update `__version__` in `ros/src/__version__.py`
  * update `version` and `today` in `ros/doc/conf.py`
+ * update `version` in `ros/setup.py`
