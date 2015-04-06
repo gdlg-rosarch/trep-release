@@ -5,10 +5,10 @@
 
 #!!!!!!!!!! UPDATE THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!
 # The version info for the project you're documenting.
-version = 'v0.93.1'
+version = 'v1.0.0'
 
 # Enter date of trep release instead of 'today'
-today = 'November 24, 2014'
+today = 'April 06, 2015'
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 extensions = [
@@ -34,7 +34,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'trep'
-copyright = u'2014, Elliot Johnson'
+copyright = u'2015, Elliot Johnson'
 
 
 
