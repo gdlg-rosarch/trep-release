@@ -1,10 +1,13 @@
 #!/usr/bin/python
 
+try:
+    from setuptools import setup, Extension, convert_path
+except ImportError:
+    from distutils.core import setup
+    from distutils.util import convert_path
+    from distutils.extension import Extension
 import sys
 import subprocess
-from distutils.util import convert_path
-from distutils.core import setup
-from distutils.extension import Extension
 from distutils.sysconfig import get_python_inc, get_config_var
 import os.path
 import numpy
@@ -50,6 +53,7 @@ _trep = Extension('trep._trep',
                       
                       # Constraints
                       'src/_trep/constraints/distance.c',
+                      'src/_trep/constraints/plane.c',
                       'src/_trep/constraints/point.c',
                       
                       # Potentials
@@ -60,6 +64,7 @@ _trep = Extension('trep._trep',
                       
                       # Forces
                       'src/_trep/forces/damping.c',
+                      'src/_trep/forces/lineardamper.c',
                       'src/_trep/forces/configforce.c',
                       'src/_trep/forces/bodywrench.c',
                       'src/_trep/forces/hybridwrench.c', 
@@ -81,7 +86,7 @@ ext_modules += [_polyobject]
 
 
 setup (name = 'trep',
-       version = '0.93.1',
+       version = '1.0.0',
        description = 'trep is used to simulate mechanical systems.',
        long_description="Trep is a Python module for modeling articulated rigid body mechanical systems in \
 generalized coordinates. Trep supports basic simulation but it is primarily designed to serve as a \
