@@ -1,3 +1,24 @@
+## python_trep (hydro) - 1.0.0-0
+
+The packages in the `python_trep` repository were released into the `hydro` distro by running `/usr/bin/bloom-release python_trep --track hydro --rosdistro hydro` on `Mon, 06 Apr 2015 19:25:15 -0000`
+
+The `python_trep` package was released.
+
+Version of package(s) in repository `python_trep`:
+- upstream repository: https://github.com/MurpheyLab/trep.git
+- release repository: https://github.com/MurpheyLab/trep-release.git
+- rosdistro version: `0.93.1-0`
+- old version: `0.93.1-0`
+- new version: `1.0.0-0`
+
+Versions of tools used:
+- bloom version: `0.5.19`
+- catkin_pkg version: `0.2.8`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## python_trep (indigo) - 1.0.0-0
 
 The packages in the `python_trep` repository were released into the `indigo` distro by running `/usr/bin/bloom-release python_trep --track indigo --rosdistro indigo` on `Mon, 06 Apr 2015 19:20:58 -0000`
