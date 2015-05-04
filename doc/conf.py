@@ -5,10 +5,10 @@
 
 #!!!!!!!!!! UPDATE THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!
 # The version info for the project you're documenting.
-version = 'v1.0.0'
+version = '1.0.1'
 
 # Enter date of trep release instead of 'today'
-today = 'April 06, 2015'
+today = 'May 04, 2015'
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 extensions = [
