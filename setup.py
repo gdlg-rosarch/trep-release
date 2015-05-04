@@ -6,25 +6,15 @@ except ImportError:
     from distutils.core import setup
     from distutils.util import convert_path
     from distutils.extension import Extension
-import sys
-import subprocess
-from distutils.sysconfig import get_python_inc, get_config_var
-import os.path
 import numpy
 
 
-include_dirs = []
+include_dirs = [numpy.get_include()]
 cflags=[]
 ldflags=[]
 define_macros=[]
 cmd_class = {}
 cmd_options = {}
-
-
-# If numpy include file isn't in the standard Python include path, 
-# add it manually.
-if not os.path.exists(os.path.join(get_python_inc(), "numpy", "arrayobject.h")):
-    include_dirs += [numpy.get_include()]
 
 
 ################################################################################
@@ -86,7 +76,7 @@ ext_modules += [_polyobject]
 
 
 setup (name = 'trep',
-       version = '1.0.0',
+       version = '1.0.1',
        description = 'trep is used to simulate mechanical systems.',
        long_description="Trep is a Python module for modeling articulated rigid body mechanical systems in \
 generalized coordinates. Trep supports basic simulation but it is primarily designed to serve as a \
@@ -108,11 +98,12 @@ of the system's dynamics.",
                  'trep.ros'
                  ],
        package_data={
-           'trep.visual' : ['icons/*.svg']
+           'trep.visual' : ['icons/*.svg'], 'trep' : ['_trep/*.h']
            },
        ext_modules=ext_modules,
        cmdclass=cmd_class,
        command_options=cmd_options,
+       zip_safe=False,
        install_requires=[
            'numpy',
            'scipy',
