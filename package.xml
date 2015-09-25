@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>python_trep</name>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>Trep: Mechanical Simulation and Optimal Control Software</description>
   <author>Elliot Johnson</author>
   <author email="t-murphey@northwestern.edu">Todd Murphey</author>
