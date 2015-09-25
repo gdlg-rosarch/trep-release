@@ -27,43 +27,43 @@ _trep = Extension('trep._trep',
                   extra_compile_args=cflags,
                   extra_link_args=ldflags,
                   sources = [
-                      'src/_trep/midpointvi.c',
-                      'src/_trep/system.c',
-                      'src/_trep/math-code.c',
-                      'src/_trep/frame.c',
-                      'src/_trep/_trep.c',
-                      'src/_trep/config.c',
-                      'src/_trep/potential.c',
-                      'src/_trep/force.c',
-                      'src/_trep/input.c',
-                      'src/_trep/constraint.c',
-                      'src/_trep/frametransform.c',
-                      'src/_trep/spline.c',
-                      'src/_trep/tapemeasure.c',
+                      'trep/_trep/midpointvi.c',
+                      'trep/_trep/system.c',
+                      'trep/_trep/math-code.c',
+                      'trep/_trep/frame.c',
+                      'trep/_trep/_trep.c',
+                      'trep/_trep/config.c',
+                      'trep/_trep/potential.c',
+                      'trep/_trep/force.c',
+                      'trep/_trep/input.c',
+                      'trep/_trep/constraint.c',
+                      'trep/_trep/frametransform.c',
+                      'trep/_trep/spline.c',
+                      'trep/_trep/tapemeasure.c',
                       
                       # Constraints
-                      'src/_trep/constraints/distance.c',
-                      'src/_trep/constraints/plane.c',
-                      'src/_trep/constraints/point.c',
+                      'trep/_trep/constraints/distance.c',
+                      'trep/_trep/constraints/plane.c',
+                      'trep/_trep/constraints/point.c',
                       
                       # Potentials
-                      'src/_trep/potentials/gravity.c',
-                      'src/_trep/potentials/linearspring.c',
-                      'src/_trep/potentials/configspring.c',
-                      'src/_trep/potentials/nonlinear_config_spring.c',
+                      'trep/_trep/potentials/gravity.c',
+                      'trep/_trep/potentials/linearspring.c',
+                      'trep/_trep/potentials/configspring.c',
+                      'trep/_trep/potentials/nonlinear_config_spring.c',
                       
                       # Forces
-                      'src/_trep/forces/damping.c',
-                      'src/_trep/forces/lineardamper.c',
-                      'src/_trep/forces/configforce.c',
-                      'src/_trep/forces/bodywrench.c',
-                      'src/_trep/forces/hybridwrench.c', 
-                      'src/_trep/forces/spatialwrench.c',
-                      'src/_trep/forces/pistonexample.c',
+                      'trep/_trep/forces/damping.c',
+                      'trep/_trep/forces/lineardamper.c',
+                      'trep/_trep/forces/configforce.c',
+                      'trep/_trep/forces/bodywrench.c',
+                      'trep/_trep/forces/hybridwrench.c', 
+                      'trep/_trep/forces/spatialwrench.c',
+                      'trep/_trep/forces/pistonexample.c',
                       ],
                   depends=[
-                      'src/_trep/trep.h',
-                      'src/_trep/c_api.h'
+                      'trep/_trep/trep.h',
+                      'trep/_trep/c_api.h'
                       ])
 
 ext_modules += [_trep]
@@ -71,12 +71,12 @@ ext_modules += [_trep]
 _polyobject = Extension('trep.visual._polyobject',
                         extra_compile_args=[],
                         extra_link_args=['-lGL'],
-                        sources = ['src/visual/_polyobject.c'])
+                        sources = ['trep/visual/_polyobject.c'])
 ext_modules += [_polyobject]
 
 
 setup (name = 'trep',
-       version = '1.0.1',
+       version = '1.0.2',
        description = 'trep is used to simulate mechanical systems.',
        long_description="Trep is a Python module for modeling articulated rigid body mechanical systems in \
 generalized coordinates. Trep supports basic simulation but it is primarily designed to serve as a \
@@ -87,7 +87,6 @@ of the system's dynamics.",
        url = 'http://nxr.northwestern.edu/trep',
        license='GPLv3',
        platforms='Linux, Mac, Windows',
-       package_dir = {'' : 'src', 'trep': 'src'},
        packages=['trep',
                  'trep.constraints',
                  'trep.potentials',
@@ -109,6 +108,6 @@ of the system's dynamics.",
            'scipy',
        ],
        headers=[
-           'src/_trep/trep.h',
-           'src/_trep/c_api.h'
+           'trep/_trep/trep.h',
+           'trep/_trep/c_api.h'
            ])
