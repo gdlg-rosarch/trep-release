@@ -1,3 +1,26 @@
+## python_trep (kinetic) - 1.0.3-1
+
+The packages in the `python_trep` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic --new-track python_trep` on `Tue, 03 Oct 2017 21:37:51 -0000`
+
+The `python_trep` package was released.
+
+Version of package(s) in repository `python_trep`:
+
+- upstream repository: https://github.com/MurpheyLab/trep.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `1.0.3-0`
+- new version: `1.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.6`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## python_trep (kinetic) - 1.0.3-0
 
 The packages in the `python_trep` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic --new-track python_trep` on `Tue, 03 Oct 2017 21:35:13 -0000`
