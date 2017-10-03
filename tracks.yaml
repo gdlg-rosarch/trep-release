@@ -60,7 +60,7 @@ tracks:
     last_version: 1.0.3
     name: trep
     patches: ros
-    release_inc: '0'
+    release_inc: '1'
     release_repo_url: https://github.com/MurpheyLab/trep-release.git
     release_tag: v:{version}
     ros_distro: kinetic
