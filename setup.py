@@ -76,7 +76,7 @@ ext_modules += [_polyobject]
 
 
 setup (name = 'trep',
-       version = '1.0.2',
+       version = '1.0.3',
        description = 'trep is used to simulate mechanical systems.',
        long_description="Trep is a Python module for modeling articulated rigid body mechanical systems in \
 generalized coordinates. Trep supports basic simulation but it is primarily designed to serve as a \
